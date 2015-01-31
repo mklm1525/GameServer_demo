@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Server>
+  <Port>50000</Port>
+  <ReadBufferSize>4096</ReadBufferSize>
+</Server>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="mina.player.Player" table="PLAYER">
+	
+		<id name="id" type="long" column="ID">
+     		<generator class="native" />
+		</id>
+		
+		<property name="userId"			column="USER_ID"				type="long" />
+		<property name="name"			column="NAME"				type="string" />
+		<property name="level"			column="LEVEL"				type="int" />
+		<property name="exp"			column="EXP"				type="long" />
+		<property name="action"			column="ACTION"				type="int" />
+		<property name="money"			column="MONEY"				type="long" />
+		<property name="gold"			column="GOLD"				type="long" />
+		
+	</class>
+</hibernate-mapping>

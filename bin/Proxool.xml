@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- the proxool configuration can be embedded within your own application's.
+Anything outside the "proxool" tag is ignored. -->
+<something-else-entirely> 
+	<proxool> 
+	<alias>myserver</alias> 
+	<driver-url>jdbc:mysql://127.0.0.1:3306/myserver?characterEncoding=utf8</driver-url> 
+	<driver-class>com.mysql.jdbc.Driver</driver-class>
+	<driver-properties> 
+		<property name="user" value="root" /> 
+		<property name="password" value="mklm1525" /> 
+	</driver-properties> 
+	<house-keeping-sleep-time>50000</house-keeping-sleep-time> 
+	<maximum-connection-count>100</maximum-connection-count> 
+	<minimum-connection-count>10</minimum-connection-count> 
+	<simultaneous-build-throttle>50</simultaneous-build-throttle>
+	<prototype-count>2</prototype-count> 
+	<property name="hibernate.proxool.existing_pool">true</property> 
+	</proxool> 
+</something-else-entirely> 
